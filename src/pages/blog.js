@@ -25,10 +25,11 @@ class Blog extends React.Component {
                 <h3
                   style={{
                     marginBottom: rhythm(1 / 4),
+                    color: "var(--textNormal)",
                   }}
                 >
                   <Link
-                    style={{ boxShadow: `none` }}
+                    style={{ boxShadow: `none`, color: "var(--textLink)" }}
                     to={`/blog${node.fields.slug}`}
                   >
                     {title}
@@ -44,7 +45,7 @@ class Blog extends React.Component {
             )
           })}
         </div>
-        <Link to="/">
+        <Link to="/" color="var(--textLink)">
           <Button marginTop="85px">Go Home</Button>
         </Link>
       </Layout>
