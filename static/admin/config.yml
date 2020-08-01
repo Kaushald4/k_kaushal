@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: thomaswang/gatsby-personal-starter-blog
+  repo: kaushald4/k_kaushal
 
 media_folder: content/assets
 public_folder: ../assets
