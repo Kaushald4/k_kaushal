@@ -68,8 +68,6 @@ class IndexPage extends React.Component {
   }
 }
 
-export default IndexPage
-
 const HomeLayout = styled.div`
   display: flex;
   flex-direction: row-reverse;
@@ -77,7 +75,7 @@ const HomeLayout = styled.div`
   align-items: center;
   height: 50vh;
 
-  & ${HomeLayout} > div {
+  & > div {
     width: 600px !important;
     padding: 0 80px;
   }
@@ -89,7 +87,7 @@ const HomeLayout = styled.div`
     height: 80vh;
     margin-top: -80px;
 
-    & ${HomeLayout} > div {
+    & > div {
       width: 400px !important;
     }
   }
@@ -115,3 +113,5 @@ const Section = styled.section`
 //     }
 //   }
 // `
+
+export default IndexPage

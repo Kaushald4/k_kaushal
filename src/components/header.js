@@ -8,8 +8,8 @@ import { rhythm, scale } from "../utils/typography"
 class Header extends React.Component {
   render() {
     const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    const blogPath = `${__PATH_PREFIX__}/blog/`
+    // const rootPath = `${__PATH_PREFIX__}/`
+    // const blogPath = `${__PATH_PREFIX__}/blog/`
 
     return (
       <MyHeader>
@@ -89,9 +89,6 @@ const ListItem = styled.li`
 
   @media (max-width: 659px) {
     padding: 0 10px;
-  }
-
-  ${ListItem}:hover {
   }
 `
 
