@@ -19,6 +19,17 @@ module.exports = {
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-feed-mdx`,
     "gatsby-plugin-dark-mode",
+    "gatsby-plugin-page-progress",
+    {
+      resolve: "gatsby-plugin-page-progress",
+      options: {
+        includePaths: ["/", { regex: "^/blog" }],
+        excludePaths: [],
+        color: "#987659",
+        height: 5,
+      },
+    },
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -67,7 +78,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // edit below
-        // trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID || "none",
       },
     },
     {
