@@ -37,9 +37,10 @@ class IndexPage extends React.Component {
                   fontWeight: "bold",
                   fontSize: "60px",
                   paddingBottom: "4px",
+                  marginTop: "20px",
                 }}
               >
-                👨🏻‍💻HI! I'm Kaushal
+                👨🏻‍💻HI! I'm <span style={{ marginLeft: "140px" }}>Kaushal</span>
               </h1>
               <h3
                 style={{
@@ -61,6 +62,9 @@ class IndexPage extends React.Component {
           </HomeLayout>
           <section>
             <h2>Projects that i'm working on</h2>
+            <p style={{ paddingLeft: "40px", marginTop: "40px" }}>
+              Under development ✍🏻
+            </p>
           </section>
         </Layout>
       </>
@@ -84,7 +88,7 @@ const HomeLayout = styled.div`
     flex-direction: column;
     justify-content: center;
     margin-top: 14px;
-    height: 80vh;
+    height: 90vh;
     margin-top: -80px;
 
     & > div {

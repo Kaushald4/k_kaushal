@@ -13,31 +13,37 @@ class Header extends React.Component {
 
     return (
       <MyHeader>
-        <List>
-          <Logo>
-            <h2>Kaushal Mehta</h2>
-          </Logo>
-          <NavigationMenu>
-            <ListItem>
-              <Link to="/blog" style={{ color: "inherit" }}>
-                Blog
+        <div style={{ maxWidth: "1920px", margin: "auto" }}>
+          <List>
+            <Logo>
+              <Link to="/">
+                <h2 style={{ fontSize: "18px", fontWeight: "bold" }}>
+                  Kaushal Mehta
+                </h2>
               </Link>
-            </ListItem>
-            <ListItem>
-              <Link to="/blog" style={{ color: "inherit" }}>
-                Projects
-              </Link>
-            </ListItem>
-            <ListItem>
-              <Link to="/about" style={{ color: "inherit" }}>
-                About
-              </Link>
-            </ListItem>
-          </NavigationMenu>
-          <ThemeSwitcherEl>
-            <ThemeToggle />
-          </ThemeSwitcherEl>
-        </List>
+            </Logo>
+            <NavigationMenu>
+              <ListItem>
+                <Link to="/blog" style={{ color: "inherit" }}>
+                  Blog
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link to="/blog" style={{ color: "inherit" }}>
+                  Projects
+                </Link>
+              </ListItem>
+              <ListItem>
+                <Link to="/about" style={{ color: "inherit" }}>
+                  About
+                </Link>
+              </ListItem>
+            </NavigationMenu>
+            <ThemeSwitcherEl>
+              <ThemeToggle />
+            </ThemeSwitcherEl>
+          </List>
+        </div>
       </MyHeader>
     )
   }
