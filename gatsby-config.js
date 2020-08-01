@@ -4,9 +4,9 @@ module.exports = {
     title: `Kaushal Mehta`,
     author: `Kaushal Mehta`,
     description: `Kaushal Mehta Computer Science Student`,
-    siteUrl: ``,
+    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
     social: {
-      twitter: `k_kaushal`,
+      twitter: `k_kaushal_`,
       instagram: "k_kaushal",
     },
   },
