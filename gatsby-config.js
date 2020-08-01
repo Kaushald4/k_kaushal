@@ -20,13 +20,23 @@ module.exports = {
     `gatsby-plugin-feed-mdx`,
     "gatsby-plugin-dark-mode",
     "gatsby-plugin-page-progress",
+    "gatsby-plugin-nprogress",
     {
       resolve: "gatsby-plugin-page-progress",
       options: {
-        includePaths: ["/", { regex: "^/blog" }],
-        excludePaths: [],
+        includePaths: [{ regex: "^/blog" }],
+        excludePaths: ["/", "/projects", "/about"],
         color: "#987659",
-        height: 5,
+        height: 2,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `tomato`,
+        // Disable the loading spinner.
+        showSpinner: false,
       },
     },
 
