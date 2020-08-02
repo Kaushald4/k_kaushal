@@ -8,7 +8,7 @@ import SEO from "../components/seo"
 
 class IndexPage extends React.Component {
   render() {
-    const siteTitle = "Gatsby Starter Personal Website"
+    const siteTitle = "Kaushal Mehta"
 
     return (
       <>
@@ -16,7 +16,15 @@ class IndexPage extends React.Component {
         <Layout location={this.props.location} title={siteTitle}>
           <SEO
             title="Home"
-            keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+            keywords={[
+              `k_kaushal_`,
+              `k_kaushal`,
+              `kaushal mehta`,
+              `kaushald4`,
+              "Kaushal",
+              "coding",
+              "programming",
+            ]}
           />
           <HomeLayout>
             <Composition>
